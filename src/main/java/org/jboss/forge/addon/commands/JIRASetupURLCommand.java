@@ -47,8 +47,9 @@ public class JIRASetupURLCommand extends AbstractUICommand
    @Override
    public Result execute(UIExecutionContext context)
    {
+      String targetUrl = url.getValue().getFullyQualifiedName()
       Configuration subset = config.subset("jira");
-      subset.setProperty("url", url.getValue().getFullyQualifiedName());
-      return Results.success("JIRA URL set!");
+      subset.setProperty("url", targetUrl);
+      return Results.success("JIRA URL set to: "+targetUrl);
    }
 }
