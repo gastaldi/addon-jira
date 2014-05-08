@@ -17,6 +17,7 @@ This addon provides *standalone* functionality.
 
 == Setup
 This Addon requires the following installation steps.
+
 === Add configuration to pom.xml 
 To use this addon, you must add it as a dependency in the *pom.xml* of your `forge-addon` classified artifact:
 [source,xml]
