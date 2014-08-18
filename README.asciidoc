@@ -30,12 +30,12 @@ To use this addon, you must add it as a dependency in the *pom.xml* of your `for
 </dependency>
 ----
 == Features
-Setup JIRA URL:: 
+Setup JIRA:: 
 You need to set the JIRA URL before anything else
 +
 [source,java]
 ----
-jira-setup-url --url http://issues.jboss.org
+jira-setup --url http://issues.jboss.org
 ----
 
 Opens JIRA issues in Forge:: 
