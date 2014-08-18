@@ -31,7 +31,7 @@ public class JIRAOpenIssueCommand extends AbstractUICommand
    @Override
    public UICommandMetadata getMetadata(UIContext context)
    {
-      return Metadata.forCommand(JIRAOpenIssueCommand.class)
+      return Metadata.forCommand(getClass())
                .name("JIRA: Open Issue")
                .description("Opens an issue or a group of issues")
                .category(Categories.create("JIRA"));
