@@ -19,7 +19,7 @@ import java.lang.Exception;
 
 import javax.inject.Inject;
 
-public class JIRASetupURLCommand extends AbstractUICommand
+public class JIRASetupCommand extends AbstractUICommand
 {
 
    @Inject
@@ -32,9 +32,9 @@ public class JIRASetupURLCommand extends AbstractUICommand
    @Override
    public UICommandMetadata getMetadata(UIContext context)
    {
-      return Metadata.forCommand(JIRASetupURLCommand.class)
-               .name("JIRA: Setup URL")
-               .description("Setup the JIRA URL")
+      return Metadata.forCommand(getClass())
+               .name("JIRA: Setup")
+               .description("Setup the JIRA Addon")
                .category(Categories.create("JIRA", "Setup"));
    }
 
